@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">Reminder Buddy</string>
+    <string name="title_activity_add_reminder">Create Reminder</string>
+    <string name="title_activity_edit_reminder">Edit Reminder</string>
+    <string name="add_reminder">Please Enter Your Reminder Note Here!</string>
+    <string name="details">Other Information</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_off">Off</string>
+    <string name="repeat_no">Repetition Interval</string>
+    <string name="repeat_type">Type of Repetitions</string>
+    <string name="action_discard_reminder">Remove Your Reminder</string>
+    <string name="action_save_reminder">Save Your Reminder</string>
+    <string name="no_reminders">Please click on Float button to create a reminder</string>
+
+</resources>

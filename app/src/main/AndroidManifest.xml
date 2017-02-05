@@ -1,0 +1,44 @@
+<!--
+    * Copyright 2017 Advait Patel.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.advaitpatel.reminderbuddy" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        tools:replace="android:icon,android:theme"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.advaitpatel.reminderbuddy.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.advaitpatel.reminderbuddy.ReminderAddActivity"
+                  android:label="@string/title_activity_add_reminder"/>
+
+        <activity android:name="com.advaitpatel.reminderbuddy.ReminderEditActivity"
+                  android:label="@string/title_activity_edit_reminder"/>
+
+        <receiver android:name="com.advaitpatel.reminderbuddy.AlarmReceiver"/>
+
+        <receiver android:name="com.advaitpatel.reminderbuddy.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
